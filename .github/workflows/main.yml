@@ -1,6 +1,5 @@
 name: Serenity_run
 on:
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:  
   #push:
     #branches:
@@ -24,7 +23,7 @@ jobs:
         - name: Setup Node Modules
           uses: bahmutov/npm-install@v1
           id: test_step
-        - run: npm run serenity -- --suite translate
+        - run: npm run serenity
           if: always()
           id: serenity_tests
         - name: Test Report Generation

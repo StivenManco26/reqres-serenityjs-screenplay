@@ -1,28 +1,34 @@
-# Proyecto base SerenityJs-WebDriverIO-Screenplay
+# Proyecto de automatización API Reqres con Serenity Rest - SerenityJS - Cucumber - WDIO
 
-### Usage
+## Objetivo
 
-Este repositorio es un template para iniciar un proyecto usando los frameworks SerenityJS, Cucumber, WebDriverIO con el patrón de diseño Screenplay. [create a new GitHub repository](https://help.github.com/en/articles/creating-a-repository-from-a-template), [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+Este repositorio tiene como objetivo la automatización de las pruebas de integración de Reqres API
 
+## Instalación
 
-### Installation
-
-Para correr el proyecto es necesario:
+Para correr el proyecto localmente es necesario:
 - Node.js, a Long-Term Support (LTS) release version 16 or later - [download](https://nodejs.org/en/)
 - Java Runtime Environment (JRE) or a Java Development Kit (JDK) version 11 or later - [download](https://adoptopenjdk.net/)
 - Chrome web browser - [download](https://www.google.co.uk/chrome/)
 
+Para clonar el código ejecute el siguiente comando:
+```
+git clone https://github.com/StivenManco26/reqres-serenityjs-screenplay.git
+```
 
 Una vez clone el código ejecute el siguiente comando en el directorio donde clonó el proyecto:
 ```
-npm install
+npm install --legacy-peer-deps
 ```
 
-### Execution
+## Ejecución Local
 
-El proyecto proporciona varios scripts configurados [NPM scripts](https://docs.npmjs.com/cli/v6/using-npm/scripts) definidos en el [`package.json`](package.json):
+El proyecto proporciona varios scripts configurados [NPM scripts](https://docs.npmjs.com/cli/v6/using-npm/scripts) definidos en el [`package.json`](package.json)
+
+Para correr el proyecto ejecute el siguiente comando:
 
 ```
 npm run serenity 
 ```
-ejecuta la suite pruebas de ejemplo y genera el reporte en la ruta ./target/site/serenity
+
+Esto ejecuta todas las suite de pruebas y genera el reporte en la ruta ./target/site/serenity

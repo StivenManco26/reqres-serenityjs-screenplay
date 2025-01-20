@@ -8,13 +8,14 @@ export const config: WebdriverIOConfig = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    autoCompileOpts: {
-        autoCompile: true,
-        tsNodeOpts: {
-            project: './tsconfig.json',
-            transpileOnly: true
-        }
-    },
+    // Remove the 'autoCompileOpts' property
+    // autoCompileOpts: {
+    //     autoCompile: true,
+    //     tsNodeOpts: {
+    //         project: './tsconfig.json',
+    //         transpileOnly: true
+    //     }
+    // },
     //
     // ==================
     // Specify Test Files
@@ -33,11 +34,6 @@ export const config: WebdriverIOConfig = {
     specs: [
         './test/**/*.feature'
     ],
-    suites: {
-        translate: [
-            './test/features/GoogleTranslate.feature'
-        ]
-    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -70,7 +66,7 @@ export const config: WebdriverIOConfig = {
             args: [
                 //'start-maximized',
                 //'no-sandbox',
-                'window-size=1920,1080',
+                //'window-size=1920,1080',
                 'headless=new',
             ]
         }
@@ -109,7 +105,7 @@ export const config: WebdriverIOConfig = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://translate.google.com/',
+    //baseUrl: 'https://translate.google.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
